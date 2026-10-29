@@ -1,10 +1,12 @@
 {
+  "config_version": 2,
   "infopark_list": {
     "rows": "#job-list tbody tr",
     "link": "td.btn-sec a",
     "role": "td:nth-child(3)",
     "company": "td.date",
-    "deadline": "td.head"
+    "deadline": "td.head",
+    "posted_date": "td:nth-of-type(1)"
   },
   "infopark_detail": {
     "description": "div.deatil-box",
@@ -19,9 +21,16 @@
   },
   "ul_list": {
     "table": "table.table",
+    "role": "td:nth-of-type(1) a",
+    "company": "td:nth-of-type(2) a",
+    "view_link": "td:nth-of-type(3) a",
     "role_link": "td:nth-child(1) a",
     "company_link": "td:nth-child(2) a",
     "apply_link": "td:nth-child(3) a",
     "date_text": "td:nth-child(1)"
+  },
+  "ul_detail": {
+    "description": "div.c2_left_padd",
+    "description_fallback": "div.job_border"
   }
 }
